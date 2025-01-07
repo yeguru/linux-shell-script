@@ -20,7 +20,7 @@ fi
 
 dnf list installed  zip 
 
-if [ $? ne 0]
+if [ $? ne 0 ]
 then
     dnf install zip -y
     VALIDATE $? "Installing.... zip"
