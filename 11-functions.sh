@@ -3,7 +3,7 @@
 userid=$(id -u)
 
 VALIDATE(){
-    if [ $1 ne 0 ]
+    if [ $? -ne 0 ]
     then
         echo "$2 ...Failure"
         exit 127
@@ -20,7 +20,7 @@ fi
 
 dnf list installed  lvm  
 
-if [ $? ne 0 ]
+if [ $? -ne 0 ]
 then
     dnf install lvm -y
     VALIDATE $? "Installing.... lvm"
@@ -30,7 +30,7 @@ fi
 
 dnf list installed java
 
-if [ $? ne 0 ]
+if [ $? -ne 0 ]
 then
     dnf install java -y
     VALIDATE $? "Installing.... java"
