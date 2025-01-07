@@ -10,7 +10,7 @@ VALIDATE(){
     else
         echo "$2 ...Success"
     fi        
-}
+         }
 
 if [ $userid ne 0 ]
 then
