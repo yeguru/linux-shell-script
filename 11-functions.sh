@@ -24,9 +24,9 @@ if [ $? ne 0 ]
 
 then
     dnf install lvm -y
-    VALIDATE $? "Installing.... zip"
+    VALIDATE $? "Installing.... lvm"
 else
-    echo "zip is already ...INSTALLED"
+    echo "LVM is already ...INSTALLED"
 fi
 
 dnf list installed java
@@ -34,9 +34,9 @@ dnf list installed java
 if [ $? ne 0 ]
 
 then
-    dnf insatll java -y
-    VALIDATE $? "Installing.... Git"
+    dnf install java -y
+    VALIDATE $? "Installing.... java"
 else
-    echo "Git is already ...INSTALLED"
+    echo "java is already ...INSTALLED"
 fi    
 
