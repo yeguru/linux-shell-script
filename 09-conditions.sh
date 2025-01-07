@@ -2,7 +2,7 @@
 
 Number=$1
 
-if[$Number -ge 99]
+if [$Number -ge 99]
 
 then
     echo ("The number is greater than 99 :$Number")
