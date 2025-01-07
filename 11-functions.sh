@@ -20,7 +20,7 @@ fi
 
 dnf list installed  lvm  
 
-if [ $? ne 0 ]
+if [ "$?" ne 0 ]
 
 then
     dnf install lvm -y
@@ -31,7 +31,7 @@ fi
 
 dnf list installed java
 
-if [ $? ne 0 ]
+if [ "$?" ne 0 ]
 
 then
     dnf install java -y
