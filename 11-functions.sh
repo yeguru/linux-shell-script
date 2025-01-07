@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userid=$(id -u)
+USERID=$(id -u)
 
 VALIDATE(){
     if [ $? -ne 0 ]
@@ -12,7 +12,7 @@ VALIDATE(){
     fi        
          }
 
-    if [ $userid ne 0 ]
+    if [ $USERID -ne 0 ]
     then
         echo "ERROR: Please execute the script with the root/sudo privileges"
         exit 127
