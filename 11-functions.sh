@@ -18,21 +18,23 @@ then
     exit 127
 fi
 
-dnf list installed  zip 
+dnf list installed  lvm  
 
 if [ $? ne 0 ]
+
 then
-    dnf install zip -y
+    dnf install lvm -y
     VALIDATE $? "Installing.... zip"
 else
     echo "zip is already ...INSTALLED"
 fi
 
-dnf list installed git
+dnf list installed java
 
 if [ $? ne 0 ]
+
 then
-    dnf insatll git -y
+    dnf insatll java -y
     VALIDATE $? "Installing.... Git"
 else
     echo "Git is already ...INSTALLED"
